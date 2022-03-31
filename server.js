@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 var json = require("./data/data.json");
 const fs = require('fs');
 const res = require('express/lib/response');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 /*Jotta staattiset tiedostot (kuten css) toimisivat
 ohjelmassa,
 täsmenetään ohjelmalle kansio staattisten tiedostojen 
