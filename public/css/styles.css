@@ -1,0 +1,122 @@
+/*Yleiset*/
+body {
+  color: #526066;
+}
+h2,
+h3 {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+p {
+  line-height: 1.6em;
+}
+.l-content {
+  margin: 0 auto;
+}
+.l-box {
+  padding: 0.5em 2em;
+}
+
+/*Navigointi*/
+.pure-menu {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pure-menu-link {
+  padding: 0.5em 0.7em;
+}
+
+/*Juliste-lohko*/
+.index_p {
+  background: transparent url("/images/books.jpeg") 0 0 no-repeat fixed;
+}
+.guestbook_p {
+  background: transparent url("/images/book.jpeg") center no-repeat fixed;
+}
+.newmessage_p {
+  background: transparent url("/images/pen.jpeg") center no-repeat fixed;
+}
+.ajax_p {
+  background: transparent url("/images/ajax.jpeg") 0 0 no-repeat fixed;
+}
+.banner {
+  text-align: center;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+
+  height: 200px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+}
+.banner-head {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 2em;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 1px black;
+}
+/*Pääsivun informatiivinen lohko*/
+.information-head {
+  color: black;
+  font-weight: 500;
+}
+/*Alapalkki*/
+.footer {
+  background: #111;
+  color: #888;
+  text-align: center;
+}
+
+/*Json-lista*/
+#list {
+  margin: 0;
+  padding: 0;
+}
+
+/*Ajax-listan tyylit */
+.ajax-item {
+  padding: 0.9em 1em;
+  border-bottom: 1px solid #ddd;
+  border-left: 6px solid transparent;
+}
+.ajax-avatar {
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+.ajax-name {
+  margin: 0;
+}
+.ajax-name {
+  color: #999;
+}
+.ajax-desc {
+  font-size: 80%;
+  margin: 0.4em 0;
+}
+.ajax-item-selected {
+  background: #eee;
+}
+.ajax-avatar {
+  width: 40px;
+  height: 40px;
+}
+/*Yli 767px näytöille */
+@media (min-width: 767px) {
+  .banner-head {
+    font-size: 4em;
+  }
+}
+
+/*Yli 480px näytöille*/
+@media (min-width: 480px) {
+  .banner {
+    height: 400px;
+  }
+  .banner-head {
+    font-size: 3em;
+  }
+}

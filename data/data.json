@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "username": "Pam",
+        "country": "Anguilla",
+        "date": "Thu Feb 22 2007 22:28:32 GMT+0200 (FLE Standard Time)",
+        "message": "How are you guys doing?"
+    },
+    {
+        "id": "2",
+        "username": "Sofia",
+        "country": "Macau",
+        "date": "Mon Apr 05 1993 09:12:01 GMT+0300 (FLE Daylight Time)",
+        "message": "Hello world!"
+    },
+    {
+        "id": "3",
+        "username": "Ashley",
+        "country": "Mauritania",
+        "date": "Sat Oct 19 1991 01:31:38 GMT+0300 (FLE Daylight Time)",
+        "message": "Greetings from Mauritania!"
+    },
+    {
+        "id": "4",
+        "username": "Baxter",
+        "country": "Malta",
+        "date": "Sat Sep 03 2005 08:52:38 GMT+0300 (FLE Daylight Time)",
+        "message": "Very nice!"
+    },
+    {
+        "id": "5",
+        "username": "Vickie",
+        "country": "Uganda",
+        "date": "Tue Jul 22 2003 08:53:21 GMT+0300 (FLE Daylight Time)",
+        "message": "Anyone from Africa here?"
+    },
+    {
+        "id": "6",
+        "username": "Raimo",
+        "country": "Finland",
+        "date": "Thu Mar 31 2022 18:40:36 GMT+0300 (EEST)",
+        "message": "Hi from Finland!"
+    },
+    {
+        "id": "7",
+        "username": "Björn",
+        "country": "Sweden",
+        "date": "Thu Mar 31 2022 18:56:04 GMT+0300 (Eastern European Summer Time)",
+        "message": "All are welcomed to Upsalla!"
+    },
+    {
+        "id": "8",
+        "username": "Natasha",
+        "country": "Russia",
+        "date": "Thu Mar 31 2022 19:13:18 GMT+0300 (Eastern European Summer Time)",
+        "message": "From Russia with love."
+    },
+    {
+        "id": "9",
+        "username": "Mindaugas",
+        "country": "Lithuania",
+        "date": "Thu Mar 31 2022 19:13:53 GMT+0300 (EEST)",
+        "message": "Labas vakaras!"
+    }
+]

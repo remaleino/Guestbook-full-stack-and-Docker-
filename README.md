@@ -1,2 +1,4 @@
 # Guestbook
- FullStack_harjoitustyö 1
+
+FullStack_harjoitustyö_1
+Projektin saa käynistettyä syöttämällä terminaaliin koodin "node server.js" tai "nodemon server.js". Sovelluksen serveri on 8081.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<% /* %>
+    Tässä sivustossa ladataan kansiosta part kompponentit head, header ja footer.
+    Näin niitä ei tarvii lisätä erikseen jokaiseen sivu-nkäkymään.
+    <% */ %>
+
+        <head>
+            <%- include('../parts/head'); %>
+        </head>
+
+        <body>
+            <header>
+                <%- include('../parts/header'); %>
+            </header>
+
+            <main>
+                <div class="banner newmessage_p">
+                    <h1 class="banner-head">
+                        Send New Message<br>
+                    </h1>
+                </div>
+                <form action="/newmessage" class="pure-form pure-form-aligned" method="POST">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="aligned-name">Username</label>
+                            <input type="text" id="username" placeholder="Username" name="username" required="" />
+                            <span class="pure-form-message-inline">This is a required field.</span>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="aligned-foo">Country</label>
+                            <input type="text" id="country" placeholder="Country" name="country" required="" />
+                            <span class="pure-form-message-inline">This is a required field.</span>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="aligned-foo">Message</label>
+                            <input type="text" id="message" placeholder="Message" name="message" required="" />
+                            <span class="pure-form-message-inline">This is a required field.</span>
+                        </div>
+                        <div class="pure-controls">
+                            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </main>
+            <footer>
+                <div class="footer l-box">
+                    <%- include('../parts/footer'); %>
+                </div>
+            </footer>
+
+        </body>

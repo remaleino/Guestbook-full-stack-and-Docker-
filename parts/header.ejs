@@ -1,0 +1,22 @@
+<div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a href="/guestbook" class="pure-menu-link">theGuestbook</a></li>
+        <li class="pure-menu-item"><a href="/newmessage" class="pure-menu-link">New Message</a></li>
+        <li class="pure-menu-item"><a href="/ajaxmessage" class="pure-menu-link">AJAX Message</a></li>
+    </ul>
+</div>
+<script>
+    /*
+    Luodaan erikseen JS-skripti, jonka avulla voidaan napata
+    tällä hetkellä auki oleva polku ja korostaa
+    sen navigointi-listalta.
+    */
+    var listItems = $(".pure-menu-item");
+    listItems.each(function (i, li) {
+        var p = $(li);
+        if (p.find("a").attr("href") == document.location.pathname) {
+            p.addClass("pure-menu-item pure-menu-selected")
+        }
+    })
+</script>

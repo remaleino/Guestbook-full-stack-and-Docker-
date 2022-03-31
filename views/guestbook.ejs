@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<% /* %>
+    Tässä sivustossa ladataan kansiosta part kompponentit head, header ja footer.
+    Näin niitä ei tarvii lisätä erikseen jokaiseen sivu-nkäkymään.
+    Lisäksi alhaalla määritetään ejs-lista,
+    joka saatuaan get-metodilla json-tiedoston,
+    vie kyseiset tiedot listaan.
+    <% */ %>
+
+        <head>
+            <%- include('../parts/head'); %>
+
+        </head>
+
+        <body>
+            <header>
+                <%- include('../parts/header'); %>
+            </header>
+
+            <main>
+                <div class="banner guestbook_p">
+                    <h1 class="banner-head">
+                        theGuestbook<br>
+                    </h1>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(function(obj){ %>
+                            <tr>
+                                <th scope="row">
+                                    <%=obj.id%>
+                                </th>
+                                <td>
+                                    <%=obj.username%>
+                                </td>
+                                <td>
+                                    <%=obj.country%>
+                                </td>
+                                <td>
+                                    <%=new Date(obj.date).toLocaleString()%>
+
+                                </td>
+                                <td>
+                                    <%=obj.message%>
+                                </td>
+                            </tr>
+                            <%})%>
+                    </tbody>
+                </table>
+
+            </main>
+            <footer>
+                <div class="footer l-box">
+                    <%- include('../parts/footer'); %>
+                </div>
+            </footer>
+
+        </body>
+
+</html>
