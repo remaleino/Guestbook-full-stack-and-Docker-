@@ -6,14 +6,13 @@
   "scripts": {
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "author": "Raimond Gaev",
   "license": "ISC",
-  "bugs": {
-    "url": ""
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "17.x"
   },
   "homepage": ""
 }
