@@ -4,7 +4,6 @@ var app = express()
 const bodyParser = require("body-parser")
 var json = require("./data/data.json")
 const fs = require('fs')
-const PORT = process.env.PORT || 3000
 /*Jotta staattiset tiedostot (kuten css) toimisivat
 ohjelmassa,
 täsmenetään ohjelmalle kansio staattisten tiedostojen 
@@ -58,4 +57,6 @@ app.get('/ajax', function (req, res) {
     res.send(data)
 })
 //Määritetään sovelluksen portiksi 8081 ja todetaan portin toiminvan.
-app.listen(PORT);
+app.listen(process.env.PORT || 3000, function () {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
