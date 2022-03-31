@@ -11,5 +11,8 @@
   "engines": {
     "node": "17.x"
   },
-  "homepage": ""
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*"
+  }
 }
