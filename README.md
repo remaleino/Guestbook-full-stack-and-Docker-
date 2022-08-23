@@ -1,6 +1,6 @@
 # Guestbook
 
-FullStack_harjoitustyö_1
-Projektin saa käynistettyä syöttämällä terminaaliin koodin "node server.js" tai "nodemon server.js".
-Sovelluksessa on hyödynnetty Pure css-layouttii ja elementtejä.
-Sovelluksen serveri on 8081.
+Full-stack project for the course.
+
+You can run the app by copying the repository to you local computer or
+build the docker-compose file in terminal.
