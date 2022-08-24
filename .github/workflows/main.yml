@@ -11,8 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: build doxker-compose
-      run: docker-compose up
+    - name: build Docker
+      run: docker-compose build
     
     - name: deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12
