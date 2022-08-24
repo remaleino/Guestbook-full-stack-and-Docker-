@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      
+    
+    - name: build doxker-compose
+      run: dokcer-compose up
+    
     - name: deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12
       with:
