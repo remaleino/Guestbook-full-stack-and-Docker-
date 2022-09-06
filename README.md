@@ -6,3 +6,6 @@ You can run the app by copying the repository to you local computer and running 
 build the docker-compose file in terminal.
 
 App will be running in the port localhost:3000
+
+The Heroku link:
+https://guestbookappdevops.herokuapp.com/
